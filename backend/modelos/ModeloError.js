@@ -36,8 +36,8 @@ class ModeloError {
 	}
 
 	static generarYEnviar(expressRes, error, codigoHttp) {
-		let error = new ModeloError(error, codigoHttp);
-		error.enviarRespuestaDeError(expressRes);
+		let modeloError = new ModeloError(error, codigoHttp);
+		modeloError.enviarRespuestaDeError(expressRes);
 	}
 
 }
