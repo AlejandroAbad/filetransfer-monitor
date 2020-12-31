@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: red;
+  line-height: 1em !important;
 }
 
 code {
@@ -13,3 +13,7 @@ code {
     monospace;
 }
 
+
+.bg-danger-soft {
+	background-color: hsl(0, 100%, 97%);
+}

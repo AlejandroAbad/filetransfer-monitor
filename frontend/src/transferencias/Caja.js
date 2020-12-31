@@ -1,23 +1,19 @@
-import { Badge, Col, Row } from 'react-bootstrap';
-import { FaCloud, FaHome } from 'react-icons/fa';
+import { Card, Badge, Col, Row } from 'react-bootstrap';
+
 
 export const Caja = ({ local, host, puerto, usuario, path, cwd, comentario }) => {
 
-	return <div>
-		{local ?
-			<><FaHome /> Local</>
-			:
-			<><FaCloud /> Remoto</>
-		}
+	return <Card className="px-4 py-3 m-0">
 
-		< Row className="border-top" >
+
+		< Row  >
 			<Col sm="auto" >
 				<Badge variant="info" className="p-1 font-weight-normal text-monospace">{usuario}</Badge>
 				<Badge variant="dark-outline" className="p-1 py-2"> @ </Badge>
 				<Badge variant="primary" className="p-1  font-weight-normal  text-monospace">{host}{puerto > 0 && <>:{puerto}</>}</Badge>
 			</Col>
 		</Row >
-		<Row>
+		<Row className="my-1">
 			<Col sm="auto" className="text-monospace">
 				<code>{path}</code>
 
@@ -32,21 +28,20 @@ export const Caja = ({ local, host, puerto, usuario, path, cwd, comentario }) =>
 			</Col>
 
 		</Row>
-		{comentario && 
-		<Row>
-			<Col sm="auto" className="text-monospace">
-				<Badge variant="dark" className="p-1 px-2">{comentario}</Badge>
-			</Col>
+		{comentario &&
+			<Row>
+				<Col sm="auto" className="text-monospace">
+					<Badge variant="dark" className="p-1 px-2">{comentario}</Badge>
+				</Col>
 
-		</Row>
+			</Row>
 		}
-	</div>
+	</Card>
 
 }
 
 export const CajaSentido = ({ sentido, protocolo }) => {
 
-	console.log(sentido);
 	if (!sentido) sentido = "upload";
 	else sentido = sentido.toLowerCase();
 
