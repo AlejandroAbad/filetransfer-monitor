@@ -1,4 +1,4 @@
-import { Alert, Card, Col, Row } from 'react-bootstrap';
+import { Alert, Col, Row } from 'react-bootstrap';
 import { Caja, CajaSentido } from 'transferencias/Caja';
 
 const pad = (num) => {
