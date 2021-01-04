@@ -11,7 +11,7 @@ const C = global.config;
 const L = global.logger;
 const K = global.constants;
 
-process.title = K.PROCESS_TITLES;
+process.title = K.PROCESS_TITLE;
 
 
 process.on('uncaughtException', (excepcionNoControlada) => {
