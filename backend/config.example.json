@@ -1,0 +1,17 @@
+{
+	"logdir": ".",
+	"logconsole": true,
+	"mongodb": {
+		"username": "fileTransfer",
+		"pwd": "passsssswd",
+		"hosts": [
+			"mongodb:27017"
+		],
+		"database": "fileTransfer",
+		"replicaset": "",
+		"coleccion": "transferencias"
+	},
+	"http": { 
+		"port": 40082
+	}
+}

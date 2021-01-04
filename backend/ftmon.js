@@ -25,7 +25,7 @@ L.i('**** ARRANCANDO MONITOR FILETRANSFER - ' + K.SERVER_VERSION + ' ****');
 
 
 const HTTP = require('http');
-const configuracionHTTP = C.monitor.http;
+const configuracionHTTP = C.http;
 
 let app = require('express')();
 let cors = require('cors');
