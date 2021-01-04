@@ -1,6 +1,6 @@
 
 const PRODUCCION = true;
-const BASE_URL = 'http://localhost:5001';
+const BASE_URL = 'https://ftmon.hefame.es/api';
 
 
 const K = {
